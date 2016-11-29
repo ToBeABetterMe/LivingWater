@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:slideswitch="http://schemas.android.com/tools"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_comment_header" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/scroll_part1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评价对象"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/type1"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="教师:"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/teacher"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_toRightOf="@id/teacher"
+                    android:text="(点击选择)" />
+
+                <TextView
+                    android:id="@+id/course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/teacher"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="课程:"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/course"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_toRightOf="@id/course"
+                    android:text="(点击选择)" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scroll_part2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总体评价"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/rate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/type2"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="专业能力:"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RatingBar
+                    android:id="@+id/framework_normal_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/rate1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_toRightOf="@id/rate1"
+                    android:maxHeight="48dp"
+                    android:minHeight="48dp"
+                    android:rating="2.5" />
+
+                <TextView
+                    android:id="@+id/rate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rate1"
+                    android:layout_marginTop="@dimen/space_30"
+                    android:text="表达能力:"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RatingBar
+                    android:id="@+id/framework_normal_ratingbar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/rate2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_toRightOf="@id/rate2"
+                    android:maxHeight="48dp"
+                    android:minHeight="48dp"
+                    android:rating="2.5" />
+
+                <TextView
+                    android:id="@+id/rate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rate2"
+                    android:layout_marginTop="@dimen/space_30"
+                    android:text="亲和力:"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RatingBar
+                    android:id="@+id/framework_normal_ratingbar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/rate3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_toRightOf="@id/rate3"
+                    android:maxHeight="48dp"
+                    android:minHeight="48dp"
+                    android:rating="2.5" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/type3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="短评(最多150字)"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="您对课程和老师的看法"
+                    android:lines="5"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="@color/text_color_black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="以下内容为选填"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/space_10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标签(选填：限三个)"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <co.lujun.androidtagview.TagContainerLayout
+                        android:id="@+id/tagcontainerLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="0dp"
+                        app:container_background_color="#00000000"
+                        app:container_border_color="#00000000"
+                        app:container_border_radius="0dp"
+                        app:container_border_width="4dp"
+                        app:container_enable_drag="true"
+                        app:horizontal_interval="10dp"
+                        app:vertical_interval="10dp"
+                        app:tag_clickable="true"
+                        app:tag_theme="pure_cyan" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_5"
+                android:padding="@dimen/space_10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上课体验(选填)"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/exp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="水课鉴定"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="未填"
+                        android:textSize="@dimen/text_size_14"
+                        android:textColor="@color/text_color_black"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/exp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="点名"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="未填"
+                        android:textSize="@dimen/text_size_14"
+                        android:textColor="@color/text_color_black"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/exp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="作业量"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="未填"
+                        android:textSize="@dimen/text_size_14"
+                        android:textColor="@color/text_color_black"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="考试体验(选填)"
+                    android:textColor="@color/short_red"
+                    android:textSize="@dimen/text_size_16" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/slide_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="划重点"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/slide1"
+                        style="@style/SwitchButtonMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/slide_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="开卷"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/slide2"
+                        style="@style/SwitchButtonMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/slide_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="原题"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/slide3"
+                        style="@style/SwitchButtonMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/slide_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="给分松"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/slide4"
+                        style="@style/SwitchButtonMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
