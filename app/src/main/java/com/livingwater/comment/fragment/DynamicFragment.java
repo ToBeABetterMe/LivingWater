@@ -70,7 +70,8 @@ public class DynamicFragment extends Fragment {
             if (position == 1) {
                 return new BufferKnifeFragment();
             }
-            return HomeFragment.newInstance(URLS[position % URLS.length]);
+            return new BufferKnifeFragment();
+            //return HomeFragment.newInstance(URLS[position % URLS.length]);
         }
 
         @Override

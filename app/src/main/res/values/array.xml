@@ -2,7 +2,7 @@
 <resources>
 
 	<string-array name="news_titles">
-		<item>动态</item>
+		<item>攻略</item>
 		<item>经验</item>
 		<item>榜单</item>
 	</string-array>

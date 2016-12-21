@@ -58,7 +58,8 @@ public class MainPagerFragment extends Fragment {
             if (position == 2) {
                 return new RankFragment();
             }
-            return HomeFragment.newInstance(URLS[position % URLS.length]);
+            return new RankFragment();
+            //return HomeFragment.newInstance(URLS[position % URLS.length]);
         }
 
         @Override
