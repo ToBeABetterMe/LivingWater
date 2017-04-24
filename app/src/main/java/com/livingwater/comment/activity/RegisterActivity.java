@@ -44,7 +44,7 @@ public class RegisterActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_register2);
         initView();
         mYearItems = getResources().getStringArray(R.array.schoolYear);
         mDeptItems = getResources().getStringArray(R.array.department);

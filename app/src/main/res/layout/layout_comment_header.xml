@@ -11,7 +11,7 @@
         android:id="@+id/btnBack"
         style="@style/title_base_button"
         android:background="@drawable/btn_back"
-        android:visibility="gone" />
+        />
 
     <TextView
         android:id="@+id/textHeadTitle"
@@ -24,18 +24,17 @@
         android:focusableInTouchMode="true"
         android:maxWidth="180dp"
         android:singleLine="true"
-        android:text="你说了算"
+        android:text="评价界面"
         android:textColor="@color/text_color_white"
         android:textSize="@dimen/text_size_20" />
-    <TextView
+    <Button
         android:id="@+id/comment_ensure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="发送"
-        android:textColor="@color/text_color_white"
-        android:textSize="@dimen/text_size_18"
-        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/space_12"/>
+        android:background="@drawable/write"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        />
 
 </RelativeLayout>

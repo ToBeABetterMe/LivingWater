@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:background="@drawable/register_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title_huoshui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:layout_centerHorizontal="true"
+            android:text="活水"
+            android:textColor="@color/text_color_white"
+            android:textSize="35dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_huoshui"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="HUOSHUI"
+            android:textColor="@color/text_color_white"
+            android:textSize="15dp"/>
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="fill_parent"
+            android:layout_height="160.0dip"
+            android:layout_marginLeft="47.0dip"
+            android:layout_marginRight="47.0dip"
+            android:layout_marginTop="150.0dip"
+            >
+            <RelativeLayout
+                android:id="@+id/layoutName"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip">
+
+                <ImageView
+                    android:id="@+id/imgPhone1"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/person" />
+
+                <EditText
+                    android:id="@+id/rgName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgPhone1"
+                    android:background="@null"
+                    android:hint="输入昵称"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="11"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff111111"
+                    android:textColorHint="@color/text_color_white"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:id="@+id/imgCancel1"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:background="@drawable/cancel_phone"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/layoutName">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+
+                <ImageView
+                    android:id="@+id/imgPhone2"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/mail" />
+
+                <EditText
+                    android:id="@+id/rgAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgPhone2"
+                    android:background="@null"
+                    android:hint="输入邮箱"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="11"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff111111"
+                    android:textColorHint="@color/text_color_white"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:id="@+id/imgCancel2"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:background="@drawable/cancel_phone"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/layoutEmail">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+
+                <ImageView
+                    android:id="@+id/imgCode1"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/lock" />
+
+                <EditText
+                    android:id="@+id/rgPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgCode1"
+                    android:background="@null"
+                    android:hint="输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff111111"
+                    android:textColorHint="@color/text_color_white"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/layoutPassword">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd"
+                    android:layout_alignParentBottom="true"/>
+
+                <ImageView
+                    android:id="@+id/imgCode"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/unlock" />
+
+                <EditText
+                    android:id="@+id/rgPasswordCheck"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgCode"
+                    android:background="@null"
+                    android:hint="确认密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff111111"
+                    android:textColorHint="@color/text_color_white"
+                    android:textSize="14.0sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="fill_parent"
+            android:layout_height="135.0dip"
+            android:layout_marginLeft="59.0dip"
+            android:layout_marginRight="59.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/register_select_rect"
+            android:layout_below="@+id/rl_1">
+            <RelativeLayout
+                android:id="@+id/rl_2_3"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip">
+
+                <Button
+                    android:id="@+id/btnSchoolSelect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@null"
+                    android:text="学校选择"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_10"
+                    android:textColor="#3ca69c"
+                    android:textSize="16.0sp" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/triangle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btnSchoolSelect"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_below="@id/rl_2_3">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+                <Button
+                    android:id="@+id/btnYearSelect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_toRightOf="@+id/yearTitle"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="年级选择"
+                    android:textColor="#3ca69c"
+                    android:textSize="16.0sp" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/triangle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btnYearSelect"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_below="@+id/rl_2_1">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+                <Button
+                    android:id="@+id/btnDeptSelect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="学院选择"
+                    android:textColor="#3ca69c"
+                    android:textSize="16.0sp" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/triangle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btnDeptSelect"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="52.0dip"
+            android:layout_marginRight="52.0dip"
+            android:layout_marginBottom="50.0dip"
+            android:background="@drawable/register_rect_orange"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="注册"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/login_close"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

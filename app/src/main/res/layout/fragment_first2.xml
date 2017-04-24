@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_home_header" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d8d8d8"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/layout_view"
+                android:layout_width="match_parent"
+                android:background="#b3dfe8"
+                android:layout_height="140dp">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/background_color" />
+                <ImageView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_img_user_default"/>
+
+                <TextView
+                    android:id="@+id/hello_world"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:text="早上好"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hello_world"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="Good morning!"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+
+                android:paddingLeft="@dimen/space_20"
+                android:paddingRight="@dimen/space_20">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/grade"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/fg1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/grade"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="今日最火" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mentor"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/fg2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mentor"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="精品课程" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/activity"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/fg3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="热门分享" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/grade_check"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/fg4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/grade_check"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="查分通道" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/list_view_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/hotTeacher"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/hot_course" />
+
+                    <TextView
+                        android:id="@+id/hotTeacherText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_toRightOf="@+id/hotTeacher"
+                        android:text="推荐课程"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/arrow"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/hotTeacherText"
+                        android:layout_toLeftOf="@id/arrow"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:text="更多"
+                        android:textSize="@dimen/text_size_12" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/hotTeacher1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher" />
+
+                        <TextView
+                            android:id="@+id/tvHotIndex1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotTeacher1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotTeacher1"
+                            android:layout_alignRight="@id/hotTeacher1"
+                            android:layout_below="@+id/hotTeacher1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="竢实扬华，自强不息-来跟蒋老师学单片机"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/hotTeacher2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher" />
+
+                        <TextView
+                            android:id="@+id/tvHotIndex2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotTeacher2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotTeacher2"
+                            android:layout_alignRight="@id/hotTeacher2"
+                            android:layout_below="@+id/hotTeacher2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="竢实扬华，自强不息-来跟蒋老师学单片机"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotTeacher3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotTeacher3"
+                            android:layout_alignRight="@id/hotTeacher3"
+                            android:layout_below="@+id/hotTeacher3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="竢实扬华，自强不息-来跟蒋老师学单片机"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                        <TextView
+                            android:id="@+id/tvHotIndex3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotTeacher3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotTeacher4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher" />
+
+                        <TextView
+                            android:id="@+id/tvHotIndex4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotTeacher4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotTeacher4"
+                            android:layout_alignRight="@id/hotTeacher4"
+                            android:layout_below="@+id/hotTeacher4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="竢实扬华，自强不息-来跟蒋老师学单片机"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotTeacher5"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher" />
+
+                        <TextView
+                            android:id="@+id/tvHotIndex5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotTeacher5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotTeacher5"
+                            android:layout_alignRight="@id/hotTeacher5"
+                            android:layout_below="@+id/hotTeacher5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="竢实扬华，自强不息-来跟蒋老师学单片机"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotTeacher6"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher" />
+
+                        <TextView
+                            android:id="@+id/tvHotIndex6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotTeacher6"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotTeacher6"
+                            android:layout_alignRight="@id/hotTeacher6"
+                            android:layout_below="@+id/hotTeacher6"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="竢实扬华，自强不息-来跟蒋老师学单片机"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/hotCourse"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/hot_course" />
+
+                    <TextView
+                        android:id="@+id/hotCourseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_toRightOf="@+id/hotCourse"
+                        android:text="推荐课程"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/arrow"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/hotCourseText"
+                        android:layout_toLeftOf="@id/arrow2"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:text="更多"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/hotCourse1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher_wy" />
+
+                        <TextView
+                            android:id="@+id/tvHotCouIndex1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotCourse1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textCouView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotCourse1"
+                            android:layout_alignRight="@id/hotCourse1"
+                            android:layout_below="@+id/hotCourse1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="不念过往,不畏将来-唐僧姐姐教你欣赏音乐"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotCourse2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher_wy" />
+
+                        <TextView
+                            android:id="@+id/tvHotCouIndex2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotCourse2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textCouView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotCourse2"
+                            android:layout_alignRight="@id/hotCourse2"
+                            android:layout_below="@+id/hotCourse2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="不念过往,不畏将来-唐僧姐姐教你欣赏音乐"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotCourse3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher_wy" />
+
+                        <TextView
+                            android:id="@+id/textCouView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotCourse3"
+                            android:layout_alignRight="@id/hotCourse3"
+                            android:layout_below="@+id/hotCourse3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="不念过往,不畏将来-唐僧姐姐教你欣赏音乐"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                        <TextView
+                            android:id="@+id/tvHotCouIndex3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotCourse3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotCourse4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher_wy" />
+
+                        <TextView
+                            android:id="@+id/tvHotCouIndex4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotCourse4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textCouView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotCourse4"
+                            android:layout_alignRight="@id/hotCourse4"
+                            android:layout_below="@+id/hotCourse4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="不念过往,不畏将来-唐僧姐姐教你欣赏音乐"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotCourse5"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher_wy" />
+
+                        <TextView
+                            android:id="@+id/tvHotCouIndex5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotCourse5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textCouView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotCourse5"
+                            android:layout_alignRight="@id/hotCourse5"
+                            android:layout_below="@+id/hotCourse5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="不念过往,不畏将来-唐僧姐姐教你欣赏音乐"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/hotCourse6"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/teacher_wy" />
+
+                        <TextView
+                            android:id="@+id/tvHotCouIndex6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/hotCourse6"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:text="热度:238"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/text_color_white" />
+
+                        <TextView
+                            android:id="@+id/textCouView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/hotCourse6"
+                            android:layout_alignRight="@id/hotCourse6"
+                            android:layout_below="@+id/hotCourse6"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:maxLines="2"
+                            android:text="不念过往,不畏将来-唐僧姐姐教你欣赏音乐"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_10" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

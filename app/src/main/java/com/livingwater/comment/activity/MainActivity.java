@@ -12,6 +12,7 @@ import com.livingwater.comment.R;
 import com.livingwater.comment.fragment.CommentFragment;
 import com.livingwater.comment.fragment.DynamicFragment;
 import com.livingwater.comment.fragment.Firstfragment;
+import com.livingwater.comment.fragment.Firstfragment2;
 import com.livingwater.comment.fragment.MainPagerFragment;
 import com.livingwater.comment.fragment.MemberFragment;
 import com.livingwater.comment.ui.UIHelper;
@@ -114,7 +115,7 @@ public class MainActivity extends BaseFragmentActivity {
 
     private Fragment instantFragment(int currIndex) {
         switch (currIndex) {
-            case 0: return new Firstfragment(); //MainPagerFragment();
+            case 0: return new Firstfragment2(); //MainPagerFragment();
             case 1: return new DynamicFragment();
             case 2: return new CommentFragment(); //CommentFragment_original();
             case 3: return new MainPagerFragment(); //RankFragment();

@@ -28,7 +28,7 @@ import com.livingwater.comment.R;
  */
 public class PullToZoomScrollViewEx extends PullToZoomBase<ScrollView> {
     private static final String TAG = PullToZoomScrollViewEx.class.getSimpleName();
-    private boolean isCustomHeaderHeight = false;//自定义header高度之后可能导致zoomView拉伸不正确
+    private boolean isCustomHeaderHeight = true;//自定义header高度之后可能导致zoomView拉伸不正确
     private FrameLayout mHeaderContainer;
     private LinearLayout mRootContainer;
     private View mContentView;

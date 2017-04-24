@@ -1,6 +1,7 @@
 package com.livingwater.comment.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -16,13 +17,15 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login2);
 
         findViewById(R.id.btnReg).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                UIHelper.showRegister(LoginActivity.this);
-                finish();
+//                UIHelper.showRegister(LoginActivity.this);
+//                finish();
+                Intent intent = new Intent(LoginActivity.this, CommentActivity.class);
+                LoginActivity.this.startActivity(intent);
             }
         });
     }
